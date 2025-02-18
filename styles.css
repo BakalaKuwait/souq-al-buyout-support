@@ -1,0 +1,54 @@
+/* Define brand colors */
+:root {
+    --primary-color: #003032;
+    --secondary-color: #FCE0A1;
+    --highlight-color: #C1DE93;
+}
+
+/* Reset Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Styling */
+.faq-item {
+    background-color: var(--highlight-color);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
