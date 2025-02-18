@@ -14,20 +14,46 @@
     
     <section class="contact">
         <h2>📞 Contact Us</h2>
-        <p>Email: <a href="mailto:support@souqalbuyout.com">support@souqalbuyout.com</a></p>
+        <p>Email: <a href="mailto:bakalakuwait1@gmail.com">bakalakuwait1@gmail.com</a></p>
         <p>Phone: +XXX-XXXXXXX</p>
     </section>
 
     <section class="faq">
-        <h2>❓ Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <h3>How do I place an order?</h3>
-            <p>Simply browse the app, add items to your cart, and complete checkout with your preferred payment method.</p>
+       <div class="container">
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="question">How do I place an order?</button>
+                <div class="answer">Placing an order is simple! Browse through our categories or use the search bar to find your desired products...</div>
+            </div>
+            <div class="faq-item">
+                <button class="question">How can I track my order?</button>
+                <div class="answer">After placing an order, you can track its progress in the 'Order Tracker' section of your profile...</div>
+            </div>
+            <div class="faq-item">
+                <button class="question">What payment methods do you accept?</button>
+                <div class="answer">We offer flexible payment options including online card payments, mobile wallets, WAMD, and cash on delivery (COD)...</div>
+            </div>
+            <div class="faq-item">
+                <button class="question">Can I modify my order after placing it?</button>
+                <div class="answer">Orders can be modified only before they are processed. To request changes, contact our customer support team immediately...</div>
+            </div>
         </div>
-        <div class="faq-item">
-            <h3>What payment methods are available?</h3>
-            <p>We accept Cash on Delivery, Online Card Payment, Request Money, and WAMD Transaction.</p>
+    
+        <div class="info-section">
+            <h2>About Our Service</h2>
+            <p>Souq Al Buyout is committed to delivering fresh groceries straight to your doorstep. We prioritize convenience, affordability, and quality...</p>
         </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
     </section>
 
     <footer>
